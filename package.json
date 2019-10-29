@@ -1,0 +1,36 @@
+{
+  "name": "reacting-to-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo no test script available",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://www.github.com"
+  },
+  "homepage": "http://www.github.com",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "image-downloader": "^3.5.0",
+    "mongoose": "^5.7.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^1.19.0",
+    "path": "^0.12.7",
+    "style-loader": "^1.0.0"
+  }
+}
