@@ -1,15 +1,17 @@
-FROM node:12
+FROM node:lts-slim
 
-WORKDIR /server/server.js
+# Setup env variables
+ENV NODE_ENV production
+ENV PORT 3000
 
-COPY package*.json ./
+WORKDIR /app
 
-RUN npm install
+# Install app dependencies
+COPY package*.json /app/
+RUN cd/app; npm install
 
-COPY . .
+# Bundle app source
+COPY . /app
 
-EXPOSE 3004
-
+EXPOSE 3000
 CMD ["npm", "start"]
-
-
